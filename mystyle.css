@@ -34,11 +34,21 @@ div.mobileCentreText {
 .displayImages {
     margin-left: 5%;
     margin-right: 5%;
-    border: 3px solid green;
 }
 
 .languages {
     margin-left: 5%;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0 0;
 }
 
 ul#languages li {
@@ -83,6 +93,7 @@ a:active {
 
 footer {
     text-align: center;
+    padding-top: 25px;
 }
 
 footer ul {
