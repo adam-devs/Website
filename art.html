@@ -10,6 +10,38 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+
+    <style>
+
+      .galleryLine {
+        width: 70%;
+        padding-top: 300px;
+        margin: auto;
+        padding: 10px;
+      }
+
+      div.gallery {
+        margin-left: 135px;
+        margin-right: 135px;
+        border: 1px solid #fff;
+        float: left;
+        width: 300px;
+      }
+
+      div.gallery:hover {
+        border: 1px solid rgb(200, 200, 200);
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+    </style>
     <style type="text/css">
         .mobileHide {
             display: inline;
@@ -52,12 +84,44 @@
                 <a class="active" href="art.html">Digital Art</a>
             </li>
             <li>
-                <a href="about.html">About</a>
+                <a href="comingSoon.html">About</a>
             </li>
         </ul>
     </navbar>
 
-    <p style="margin-top: 70px;">not yet...</p>
+
+
+  <!-- Desktop View -->
+  <div class="mobileHide">
+
+    <h1 style="margin-top: 70px; text-align: center">Digital Art</h1>
+
+    <div class="grid" style="padding-top: 20px">
+      <div class="artwork">
+        <a target="_blank" href="art/Drake.png">
+        <img src="art/Drake.png" alt="Drake" width=300px; height=auto;>
+        </a>
+        <div class="desc">#001 Drake</div>
+      </div>
+      
+      <div class="artwork">
+        <a target="_blank" href="art/Matisse.png">
+        <img src="art/Matisse.png" alt="Matisse Thybulle" width=300px; height=auto;>
+        </a>
+        <div class="desc">#002 Matisse Thybulle</div>
+      </div>
+      
+      <div class="artwork">
+        <a target="_blank" href="art/Meknes.png">
+        <img src="art/Meknes.png" alt="Meknes" width=300px; height=auto;>
+        </a>
+        <div class="desc">#003 Meknes</div>
+      </div>
+    </div>
+
+  </div>
+
+
 </body>
 
 </html>
