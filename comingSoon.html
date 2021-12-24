@@ -3,6 +3,7 @@
 
 <head>
     <title>Coming Soon</title>
+    <script src="https://kit.fontawesome.com/735e7fb0a9.js" crossorigin="anonymous"></script>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
@@ -62,25 +63,44 @@
     </style>
 </head>
 
-<body>
-    <navbar style="padding-bottom: 50px;">
-      <ul>
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <li>
-                <a href="projects.html">Personal Projects</a>
-            </li>
-            <li>
-                <a href="art.html">Digital Art</a>
-            </li>
-            <li>
-                <a class="active" href="comingSoon.html">About</a>
-            </li>
+<body style="background-color: white">
+    <navbar class="mobileHide">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="art.html">Digital Art</a>
+            <li><a class="active" href="comingSoon.html">About</a>
+                <!--<a href="about.html">About</a>--></li>
         </ul>
     </navbar>
 
-   <div class="container text-center " id="error " style="margin-top: 70px">
+    <div class="mobileShow"> 
+      <div class="topnav">
+        <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
+          <i class="fa fa-bars"></i> Adam Alilou
+        </a>
+        <div id="myLinks">
+          <a href="home.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="art.html">Digital Art</a>
+        </div>  
+      </div>  
+    </div>
+
+  <script>
+    function myFunction() {
+      let x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+
+<!--
+  <div class="container text-center " id="error " style="margin-top: 70px">
 
         <svg height="100 " width="100 ">
     <circle cx="50 " cy="50 " r="31 " stroke="#679b08 " stroke-width="9.5 " fill="none " />
@@ -94,13 +114,13 @@
             <div class="col-md-12 ">
                 <div class="main-icon text-success "><span class="uxicon uxicon-clock-refresh "></span></div>
                 <h1>Future home of something quite cool.</h1>
-                <!--<p class="lead ">If you're the <strong>site owner</strong>, <a href="/cpanel ">log in</a> to launch this site</p>-->
+                <p class="lead ">If you're the <strong>site owner</strong>, <a href="/cpanel ">log in</a> to launch this site</p>
                 <p class="lead ">Check back soon :)</p>
             </div>
         </div>
 
     </div>
-
+    -->
 </body>
 
 </html>

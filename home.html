@@ -41,27 +41,44 @@
 </head>
 
 <body style="background-color: white">
-    <navbar style="padding-bottom: 50px;">
+    <navbar class="mobileHide">
         <ul>
-            <li>
-                <a class="active" href="home.html">Home</a>
-            </li>
-            <li>
-                <a href="projects.html">Personal Projects</a>
-            </li>
-            <li>
-                <a href="art.html">Digital Art</a>
-                <!--<a href="art.html">Digital Art</a>-->
-            </li>
-            <li>
-                <a href="comingSoon.html">About</a>
-                <!--<a href="about.html">About</a>-->
-            </li>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="art.html">Digital Art</a>
+            <li><a href="comingSoon.html">About</a>
+                <!--<a href="about.html">About</a>--></li>
         </ul>
+        <h1 style="text-align: center;">Adam Alilou</h1>
     </navbar>
 
-    
-    <h1 style="margin-top: 70px; text-align: center">Adam Alilou</h1>
+    <div class="mobileShow"> 
+      <div class="topnav">
+        <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
+          <i class="fa fa-bars"></i> Home
+        </a>
+        <div id="myLinks">
+          <a href="projects.html">Projects</a>
+          <a href="art.html">Digital Art</a>
+          <a href="comingSoon.html">About</a>
+        </div>  
+      </div>
+      
+      <h1 style="text-align: center">Adam Alilou</h1>
+    </div>
+
+  <script>
+    function myFunction() {
+      let x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+
     
     <img class="profile-picture" alt="profile picture" height="150" src="profile.jpeg">
 

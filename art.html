@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
 
 <head>
+    <script src="https://kit.fontawesome.com/735e7fb0a9.js" crossorigin="anonymous"></script>  
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -72,48 +73,63 @@
 </head>
 
 <body style="background-color: white">
-    <navbar style="padding-bottom: 50px;">
+    <navbar class="mobileHide">
         <ul>
-            <li>
-                <a href="home.html">Home</a>
-            </li>
-            <li>
-                <a href="projects.html">Personal Projects</a>
-            </li>
-            <li>
-                <a class="active" href="art.html">Digital Art</a>
-            </li>
-            <li>
-                <a href="comingSoon.html">About</a>
-            </li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a class="active" href="art.html">Digital Art</a>
+            <li><a href="comingSoon.html">About</a>
+                <!--<a href="about.html">About</a>--></li>
         </ul>
+        <h1 style="text-align: center;">Digital Art</h1>
     </navbar>
 
+    <div class="mobileShow"> 
+      <div class="topnav">
+        <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
+          <i class="fa fa-bars"></i> Adam Alilou
+        </a>
+        <div id="myLinks">
+          <a href="home.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="comingSoon.html">About</a>
+        </div>  
+      </div>
+      
+      <h1 style="text-align: center">Digital Art</h1>
+    </div>
 
+    <script>
+      function myFunction() {
+        let x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
 
   <!-- Desktop View -->
   <div class="mobileHide">
-
-    <h1 style="margin-top: 70px; text-align: center">Digital Art</h1>
-
     <div class="grid" style="padding-top: 20px">
       <div class="artwork">
-        <a target="_blank" href="art/Drake.png">
-        <img src="art/Drake.png" alt="Drake" width=300px; height=auto;>
+        <a target="_blank" href="artwork/Drake.png">
+        <img src="artwork/Drake.png" alt="Drake" width=300px; height=auto;>
         </a>
         <div class="desc">#001 Drake</div>
       </div>
       
       <div class="artwork">
-        <a target="_blank" href="art/Matisse.png">
-        <img src="art/Matisse.png" alt="Matisse Thybulle" width=300px; height=auto;>
+        <a target="_blank" href="artwork/Matisse.png">
+        <img src="artwork/Matisse.png" alt="Matisse Thybulle" width=300px; height=auto;>
         </a>
         <div class="desc">#002 Matisse Thybulle</div>
       </div>
       
       <div class="artwork">
-        <a target="_blank" href="art/Meknes.png">
-        <img src="art/Meknes.png" alt="Meknes" width=300px; height=auto;>
+        <a target="_blank" href="artwork/Meknes.png">
+        <img src="artwork/Meknes.png" alt="Meknes" width=300px; height=auto;>
         </a>
         <div class="desc">#003 Meknes</div>
       </div>
