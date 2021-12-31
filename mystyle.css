@@ -103,6 +103,10 @@ navbar {
     margin: 0;
 }
 
+navbar h1 {
+  padding-top: 70px;
+}
+
 navbar h2 {
   padding-top: 70px;
 }
@@ -337,12 +341,40 @@ div.artwork {
 }
 
 div.artwork:hover {
-  border: 1px solid rgb(200, 200, 200);
+  max-width: auto;
+  position: relative;
 }
+
+div.artwork:hover img {border: 3px solid rgba(53, 188, 205);}
 
 div.artwork img {
   width = 100%;
   height: auto;
+  border: 3px solid rgba(255, 255, 255);
+}
+
+div.unfinishedArtwork {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px;
+  text-align: center;
+  opacity: 0.25;
+}
+
+div.unfinishedArtwork:hover {
+  max-width: auto;
+  position: relative;
+  opacity: 1;
+}
+
+div.unfinishedArtwork:hover img {border: 3px solid rgba(204, 73, 81);}
+
+div.unfinishedArtwork img {
+  width = 100%;
+  height: auto;
+  border: 3px solid rgba(255, 255, 255);
 }
 
 div.descm {
