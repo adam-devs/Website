@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
 
 <head>
-    <script src="https://kit.fontawesome.com/735e7fb0a9.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/735e7fb0a9.js" crossorigin="anonymous"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -13,32 +13,32 @@
     <meta name="theme-color" content="#ffffff" />
 
     <style>
-      .galleryLine {
-        width: 70%;
-        padding-top: 300px;
-        margin: auto;
-        padding: 10px;
-      }
-
-      div.gallery {
-        border: 1px solid #fff;
-        float: left;
-        width: 300px;
-      }
-
-      div.gallery:hover {
-        border: 1px solid rgb(200, 200, 200);
-      }
-
-      div.gallery img {
-        width: 100%;
-        height: auto;
-      }
-
-      div.desc {
-        padding: 15px;
-        text-align: center;
-      }
+        .galleryLine {
+            width: 70%;
+            padding-top: 300px;
+            margin: auto;
+            padding: 10px;
+        }
+        
+        div.gallery {
+            border: 1px solid #fff;
+            float: left;
+            width: 300px;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid rgb(200, 200, 200);
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
     <link href="mystyle.css" rel="stylesheet" />
@@ -52,108 +52,116 @@
             <li><a href="home.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a class="active" href="art.html">Digital Art</a>
-            <li><a href="comingSoon.html">About</a>
-                <!--<a href="about.html">About</a>--></li>
+                <li><a href="comingSoon.html">About</a>
+                    <!--<a href="about.html">About</a>--></li>
         </ul>
         <h2 style="text-align: center;">Digital Art</h2>
     </navbar>
 
-    <div class="mobileShow"> 
-      <div class="topnav">
-        <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
-          <i class="fa fa-bars"></i> Adam Alilou
-        </a>
-        <div id="myLinks">
-          <a href="home.html">Home</a>
-          <a href="projects.html">Projects</a>
-          <a href="comingSoon.html">About</a>
-        </div>  
-      </div>
-      
-      <h2 style="text-align: center">Digital Art</h2>
+    <div class="mobileShow">
+        <div class="topnav">
+            <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
+                <i class="fa fa-bars"></i> Adam Alilou
+            </a>
+            <div id="myLinks">
+                <a href="home.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="comingSoon.html">About</a>
+            </div>
+        </div>
+
+        <h2 style="text-align: center">Digital Art</h2>
     </div>
 
     <script>
-      function myFunction() {
-        let x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
+        function myFunction() {
+            let x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
-      }
     </script>
 
-  <p style="text-align: center">Click each piece for more</p>
+    <p style="text-align: center">Click each piece for more</p>
 
-  <!-- Desktop View -->
-  <div class="mobileHide">
-    <center>
-    <div class="grid" style="padding-top: 20px">
-      <div class="artwork">
-        <a target="_blank" href="artwork/001.html">
-        <img src="artwork/tn-matisse.png" alt="Matisse Thybulle" width=300px; height=auto;>
-        </a>
-        <div class="desc">#001 Matisse Thybulle</div>
-      </div>
+    <!-- Desktop View -->
+    <div class="mobileHide">
+        <center>
+            <div class="grid" style="padding-top: 20px">
+                <div class="artwork">
+                    <a href="artwork/001.html">
+                        <img src="artwork/tn-matisse.png" alt="Matisse Thybulle" width=300px; height=auto;>
+                    </a>
+                    <div class="desc">#001 Matisse Thybulle</div>
+                </div>
 
-      <div class="artwork">
-        <a target="_blank" href="artwork/tn-drake.png">
-        <img src="artwork/tn-drake.png" alt="Drake" width=300px; height=auto;>
-        </a>
-        <div class="desc">#002 Drake</div>
-      </div>
+                <div class="artwork">
+                    <a href="artwork/tn-drake.png">
+                        <img src="artwork/tn-drake.png" alt="Drake" width=300px; height=auto;>
+                    </a>
+                    <div class="desc">#002 Drake</div>
+                </div>
 
-      <div class="unfinishedArtwork">
-        <a target="_blank" href="artwork/tn-speedmaster.png">
-        <img src="artwork/tn-speedmaster.png" alt="Omega Speedmaster" width=300px%; height=auto;>
-        </a>
-        <div class="desc">#003 Speedmaster</div>
-        <span class="red">(In Progress)</span>
-      </div>
+                <div class="unfinishedArtwork">
+                    <a href="artwork/tn-speedmaster.png">
+                        <img src="artwork/tn-speedmaster.png" alt="Omega Speedmaster" width=300px%; height=auto;>
+                    </a>
+                    <div class="desc">#003 Speedmaster</div>
+                    <span class="red">(In Progress)</span>
+                </div>
 
-      <div class="artwork">
-        <a target="_blank" href="artwork/tn-amg.png">
-        <img src="artwork/tn-amg.png" alt="Mercedes Amg Gt Black Series" width=300px; height=auto;>
-        </a>
-        <div class="desc">#004 AMG GT Black Series</div>
-      </div>
+                <div class="artwork">
+                    <a href="artwork/tn-amg.png">
+                        <img src="artwork/tn-amg.png" alt="Mercedes Amg Gt Black Series" width=300px; height=auto;>
+                    </a>
+                    <div class="desc">#004 AMG GT Black Series</div>
+                </div>
+
+                <div class="artwork">
+                    <a href="artwork/tn-ferrari.png">
+                        <img src="artwork/tn-ferrari.png" alt="Charles Leclerc in the 2022 Ferrari F1 Car" width=300px; height=auto;>
+                    </a>
+                    <div class="desc">#005 Ferrari F1-75</div>
+                </div>
+            </div>
+        </center>
     </div>
-    </center>
-  </div>
 
 
-  <!-- Mobile View -->
-  <div class="mobileShow" style="float: center">
-      <div class="artwork">
-        <a target="_blank" href="artwork/tn-matisse.png">
-        <img src="artwork/tn-matisse.png" alt="Matisse Thybulle" width=300px; height=auto;>
-        </a>
-        <div class="descm">#001 Matisse Thybulle</div>
-      </div>
+    <!-- Mobile View -->
+    <div class="mobileShow" style="float: center">
+        <div class="artwork">
+            <a href="artwork/tn-matisse.png">
+                <img src="artwork/tn-matisse.png" alt="Matisse Thybulle" width=300px; height=auto;>
+            </a>
+            <div class="descm">#001 Matisse Thybulle</div>
+        </div>
 
-      <div class="artwork">
-        <a target="_blank" href="artwork/tn-drake.png">
-        <img src="artwork/tn-drake.png" alt="Drake" width=300px; height=auto;>
-        </a>
-        <div class="descm">#002 Drake</div>
-      </div>
+        <div class="artwork">
+            <a href="artwork/tn-drake.png">
+                <img src="artwork/tn-drake.png" alt="Drake" width=300px; height=auto;>
+            </a>
+            <div class="descm">#002 Drake</div>
+        </div>
 
-      <div class="unfinishedArtwork">
-        <a target="_blank" href="artwork/tn-speedmaster.png">
-        <img src="artwork/tn-speedmaster.png" alt="Omega Speedmaster" width=300px%; height=auto;>
-        </a>
-        <div class="descm">#003 Speedmaster</div>
-        <span class="red">(In Progress)</span>
-      </div>
+        <div class="unfinishedArtwork">
+            <a href="artwork/tn-speedmaster.png">
+                <img src="artwork/tn-speedmaster.png" alt="Omega Speedmaster" width=300px%; height=auto;>
+            </a>
+            <div class="descm">#003 Speedmaster</div>
+            <span class="red">(In Progress)</span>
+        </div>
 
-      <div class="artwork">
-        <a target="_blank" href="artwork/tn-amg.png">
-        <img src="artwork/tn-amg.png" alt="Mercedes Amg Gt Black Series" width=300px; height=auto;>
-        </a>
-        <div class="descm">#004 AMG GT Black Series</div>
-      </div>
- </div>
+        <div class="artwork">
+            <a href="artwork/tn-amg.png">
+                <img src="artwork/tn-amg.png" alt="Mercedes Amg Gt Black Series" width=300px; height=auto;>
+            </a>
+            <div class="descm">#004 AMG GT Black Series</div>
+        </div>
+    </div>
 
 </body>
+
 </html>
