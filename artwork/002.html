@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+
+<head>
+    <script src="https://kit.fontawesome.com/735e7fb0a9.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <style>
+        .galleryLine {
+            width: 70%;
+            padding-top: 300px;
+            margin: auto;
+            padding: 10px;
+        }
+        
+        div.gallery {
+            border: 1px solid #fff;
+            float: left;
+            width: 300px;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid rgb(200, 200, 200);
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    <link href="../mystyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adam Alilou</title>
+</head>
+
+<body style="background-color: white">
+    <navbar class="mobileHide">
+        <ul>
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a class="active" href="../art.html">Digital Art</a>
+                <li><a href="../comingSoon.html">About</a>
+                    <!--<a href="about.html">About</a>--></li>
+        </ul>
+        <h2 style="text-align: center;">#001 Matisse Thybulle</h2>
+    </navbar>
+
+    <div class="mobileShow">
+        <div class="topnav">
+            <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
+                <i class="fa fa-bars"></i> Adam Alilou
+            </a>
+            <div id="myLinks">
+                <a href="home.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="comingSoon.html">About</a>
+            </div>
+        </div>
+
+        <h2 style="text-align: center">#001 Matisse Thybulle</h2>
+    </div>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <div class="img-comp-container">
+        <div class="img-comp-img">
+            <img src="001/full.png" width="auto" height="400px">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+            <img src="001/original.png" width="auto" height="400px">
+        </div>
+    </div>
+
+    <img style="float: right; margin-right: 10%;" src="001/timelapse.gif" alt="gif of layers from image" width=auto height=400px>
+
+    <script src="slider.js" charset="utf-8"></script>
+</body>
+
+</html>
