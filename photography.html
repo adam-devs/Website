@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+
+<head>
+    <script src="https://kit.fontawesome.com/735e7fb0a9.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+    <link href="mystyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Adam Alilou</title>
+</head>
+
+<body style="background-color: white">
+    <navbar class="mobileHide">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="art.html">Digital Art</a>
+                <li><a class="active" href="photography.html">Photography</a>
+
+        </ul>
+        <h2 style="text-align: center;">Photography</h2>
+    </navbar>
+
+    <div class="mobileShow">
+        <div class="topnav">
+            <a href="javascript:void(0);" class="icon active" onclick="myFunction()">
+                <i class="fa fa-bars"></i> Adam Alilou
+            </a>
+            <div id="myLinks">
+                <a href="home.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="art.html">Digital Art</a>
+            </div>
+        </div>
+
+        <h2 style="text-align: center">Photography</h2>
+    </div>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+    <!-- Desktop View -->
+    <div class="mobileHide">
+        <div class="wrapper">
+            <div class="photo">
+                <section>
+                    <pl>Kensington</pl>
+                    <img src="photography/hotel.jpg" alt="">
+                </section>
+                <section>
+                    <pl>Agadir</pl>
+                    <img src="photography/marina.jpeg" alt="">
+                </section>
+                <section>
+                    <pl>South Kensington</pl>
+                    <img src="photography/clean.png" alt="">
+                </section>
+                <section>
+                    <pl>Hyde Park</pl>
+                    <img src="photography/hyde.jpg" alt="">
+                </section>
+                <section>
+                    <pl>The VnA</pl>
+                    <img src="photography/VnA.jpeg" alt="">
+                </section>
+            </div>
+
+            <div class="photo lower">
+                <section>
+                    <pr>Agadir</pr>
+                    <img src="photography/AgadirBay.jpeg" alt="">
+                </section>
+                <section>
+                    <pr>South Kensington</pr>
+                    <img src="photography/drone.jpg" alt="">
+                </section>
+                <section>
+                    <pr>Piccadily</pr>
+                    <img src="photography/royalAcademyArts.jpeg" alt="">
+                </section>
+                <section>
+                    <pr>Salisbury</pr>
+                    <img src="photography/salisbury.jpg" alt="">
+                </section>
+                <section>
+                    <pr>Meknes</pr>
+                    <img src="photography/moulayYoussef.jpeg" alt="">
+                </section>
+                <section>
+                    <pr>Hyde Park</pr>
+                    <img src="photography/hydeNap.jpeg" alt="">
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile View -->
+    <div class="mobileShow" style="float: center">
+        <div class="artwork">
+            <img src="photography/hotel.jpg" alt="" width=300px; height=auto;>
+            <div class="descm">Kensington</div>
+        </div>
+
+        <div class="artwork">
+            <img src="photography/drone.jpg" alt="" width=300px; height=auto;>
+            <div class="descm">South Kensington</div>
+        </div>
+
+        <div class="artwork">
+            <img src="photography/hyde.jpg" alt="" width=300px%; height=auto;>
+            <div class="descm">Hyde Park</div>
+        </div>
+
+        <div class="artwork">
+            <img src="photography/clean.png" alt="" width=300px; height=auto;>
+            <div class="descm">South Kensington</div>
+        </div>
+
+        <div class="artwork">
+            <img src="photography/salisbury.jpg" alt="" width=300px; height=auto;>
+            <div class="descm">Salisbury</div>
+        </div>
+    </div>
+
+    <p class="copyright"> Adam Alilou &copy; 2022</p>
+</body>
+
+
+</html>
