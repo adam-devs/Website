@@ -493,10 +493,8 @@ section img {
 .copyright {
     font-size: 11px;
     text-align: center;
-    /* position: fixed; */
     left: auto;
     right: auto;
     bottom: 0px;
     height: 30px;
-    width: 100%;
 }
