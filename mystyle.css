@@ -445,17 +445,18 @@ div.desc {
 section {
     width: fit-content;
     height: auto;
-    margin: 10px;
-    /* border: 3px solid rgba(204, 73, 81); */
+    margin: 20px 10px 20px 10px;
+    /* border: 1px solid rgb(77, 204, 73); */
     clear: both;
 }
 
 section pl {
-    /* border: 3px solid rgba(204, 73, 81); */
+    /* border: 1px solid rgba(204, 73, 81); */
     float: left;
-    padding: 30px;
+    /* padding: 20px; */
+    padding: 20px 10px 20px 10px;
     margin: 0;
-    width: 170px;
+    width: 150px;
     height: auto;
     vertical-align: right;
     text-align: right;
@@ -464,11 +465,11 @@ section pl {
 }
 
 section pr {
-    /* border: 3px solid rgba(204, 73, 81); */
+    /* border: 1px solid rgba(204, 73, 81); */
     float: right;
-    padding: 30px;
+    padding: 20px 0px 20px 20px;
     margin: 0;
-    width: 170px;
+    width: 150px;
     height: auto;
     vertical-align: left;
     text-align: left;
